@@ -12,8 +12,6 @@ const brands = [
   'sony',
 ];
 function brandsSearch(arr, query) {
-  // return arr.filter((element)=>element.includes(query))
-  
   return arr.filter((element)=>element.startsWith(query))
 }
 console.log(brandsSearch(brands, 'le')); // result : [ 'lenovo' ]

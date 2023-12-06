@@ -1,6 +1,5 @@
 // * ===================================5====================================
 // ********** check ***************
-j
 /*
  ? look at the code below:
  todo: 1. modify the missingLetters, put missing letters between b and f in it 
@@ -8,8 +7,9 @@ j
  todo: 3. result should be like this ["a", "b", "c", "d", "e", "f", "g"]
 */
 
-const missingLetters = ['c','d','e'];
-let [everyOne]=missingLetters
-const arr = ['a', 'b', 'f', 'g'];
-let [first,seconde,third,...rest]=arr
-console.log(first,seconde,third,);
+const missingLetters = ["c", "d", "e"];
+const arr = ["a", "b", "f", "g"];
+let middle = [...missingLetters];
+let [first, second, ...rest] = arr;
+let newArray = [first, second, ...missingLetters, ...rest];
+console.log(...newArray);

@@ -11,5 +11,3 @@ const object1 = {
 };
 
 console.log(Object.values(object1));
-const { ali, writes, novels } = object1;
-console.log(object1);

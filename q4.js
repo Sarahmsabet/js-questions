@@ -10,10 +10,10 @@
 /**Write your code below  */
 
 const myObject = {
-  name: "",
-  nickName: "",
-  toDo: "",
+  Mike: "Tall",
+  Jake: "Kind",
+  Lilly: "Young",
 };
 for (const objects in myObject) {
-  console.log(`${Object.keys(objects)} is ${Object.values(objects)}`);
+  console.log(`${objects} is ${myObject[objects]}`);
 }

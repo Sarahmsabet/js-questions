@@ -10,4 +10,10 @@ const object1 = {
   novels: "kind of book",
 };
 
+// let objectValues = [];
 console.log(Object.values(object1));
+for (let values in object1) {
+  values = [Object.values(object1)];
+  // objectValues.push(values);
+  console.log(values);
+}

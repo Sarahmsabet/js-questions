@@ -9,9 +9,10 @@ const object1 = {
   writes: "does what",
   novels: "kind of book",
 };
-
-// let objectValues = [];
+console.log("first:\n");
 console.log(Object.values(object1));
+console.log("seconde:\n");
+// let objectValues = [];
 for (let values in object1) {
   values = [Object.values(object1)];
   // objectValues.push(values);

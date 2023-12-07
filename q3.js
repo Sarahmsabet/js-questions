@@ -11,7 +11,5 @@ const sqrFunc = (num, power = 2) => {
   return Math.pow(num, power);
 };
 console.log(`whit out power amount: ${sqrFunc(10)}`);
-
-console.log(`whit power amount: ${sqrFunc(10, 2)}`);
 // correct: sqrFunc(10) => 100
 // incorrect: sqrFunc(10, 2) => 100

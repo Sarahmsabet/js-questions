@@ -25,31 +25,3 @@ let getNumber = () => {
   }
 };
 getNumber();
-
-// let firstArray = [];
-// let hopFunc = (enterNumber=5) => {
-//   for (let i = 1; i <= 200; i++) {
-//     firstArray.push(i);
-//     if (i%enterNumber===0) {
-//       (i,"hop")
-
-//     }
-//   }
-//   console.log(firstArray);
-// };
-// hopFunc();
-// let hopFunc = (enterNumber = 2, point = 200) => {
-//   for (let i = 1; i <= point; i++) {
-//     if (i % enterNumber === 0) {
-//       i.replaceAll("hop");
-//     }
-//   }
-// };
-// console.log(hopFunc());
-// let checked = hop.push(i);
-//     checked
-//       .filter((num) => {
-//         return num % enterNumber === 0;
-//       })
-//       .map(()=>{hop});
-//     return checked;

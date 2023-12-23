@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(231, 205, 239);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.main {
+  border-radius: 50px;
+}
+#outer-section {
+  width: 70vw;
+  height: 75vh;
+  background-color: rgb(222, 171, 238);
+  margin: 5rem;
+  padding: 2rem;
+}
+#inner-section {
+  width: 65vw;
+  height: 65vh;
+  background-color: rgb(242, 231, 246);
+  position: relative;
+}
+.circles {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  width: 50vw;
+  margin: 0 7rem;
+  padding: 4rem 3rem;
+}
+.each-button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+#green {
+  background-color: rgba(31, 127, 102, 1);
+}
+#yellow {
+  background-color: rgba(255, 200, 0, 1);
+}
+#orange {
+  background-color: rgba(255, 123, 0, 1);
+}
+#red {
+  background-color: rgba(216, 1, 1, 1);
+}
+#orange-red {
+  background-color: rgba(223, 4, 70, 1);
+}
+#maroon {
+  background-color: rgba(127, 31, 85, 1);
+}
+#indigo {
+  background-color: rgba(93, 18, 199, 1);
+}
+.square {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 50vw;
+  margin: 0 7rem;
+  padding-top: 2rem;
+}
+.squares {
+  width: 2.5rem;
+  height: 3.5rem;
+  border: 1px solid gray;
+}
+#cat-picture {
+  display: flex;
+  justify-content: flex-end
+}
+img {
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  bottom: -2rem;
+  right: -4rem;
+}

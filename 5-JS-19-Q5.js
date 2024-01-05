@@ -9,25 +9,37 @@ as result the red circles should be removed from the screen when they are touche
 
 */
 
-const circle = document.querySelector('.circle');
-const blocks = document.querySelectorAll('.block');
+const circle = document.querySelector(".circle");
+const blocks = document.querySelectorAll(".block");
 
 let positionX = 0;
 let positionY = 0;
 
-document.addEventListener('keydown', moveCircle);
+document.addEventListener("keydown", moveCircle);
 
 function moveCircle(e) {
   // write code here
-  // switch (e.key) {
-  // }
+  switch (e.key) {
+    case "ArrowUp":
+      circle.style.top = `${(positionY -= 5)}px`;
+      break;
+    case "ArrowDown":
+      circle.style.top = `${(positionY += 5)}px`;
+      break;
+    case "ArrowRight":
+      circle.style.left = `${(positionX += 5)}px`;
+      break;
+    case "ArrowLeft":
+      circle.style.left = `${(positionX -= 5)}px`;
+      break;
+  }
 
   // circle.style.left = //?
   // circle.style.top = //?
 
   blocks.forEach((block) => {
     if (checkCollision(circle, block)) {
-      block.style.display = 'none';
+      block.style.display = "none";
     }
   });
 }

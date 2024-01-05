@@ -2,9 +2,9 @@
 //Note: your code should log the text content of the clicked button to the console.
 
 // ! answer ===========================================
-let container=document.querySelector(".parent")
-container.addEventListener("click",(e)=>{
-if (e.tagName="button") {
+let container = document.querySelector(".parent");
+container.addEventListener("click", (e) => {
+  if (e.target.tagName == "BUTTON") {
     console.log(e.target.textContent);
-}
-})
+  }
+});

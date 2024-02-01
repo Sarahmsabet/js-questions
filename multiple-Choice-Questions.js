@@ -9,7 +9,7 @@ C: Using the Promise.new() method
 
 2. In promise terminology, what do we call the function that's passed to the Promise() constructor as an argument?
 
-A: Executor 
+// A: Executor 
 B: Generator
 C: Promise maker
 D: None of the above
@@ -87,11 +87,11 @@ p.then(function(data) {
 console.log('Second');
 
 
-// A:  First
-    // Second
+A:  First
+    Second
 
-B:  Second 
-    First
+// B:  Second 
+//     First
 
 =========================================================
 
@@ -126,7 +126,7 @@ let p = new Promise(function (resolve, reject) {
 
 
 A: State: fulfilled, value: "Sorry" 
-B: State: rejected, value: "Sorry" 
+// B: State: rejected, value: "Sorry" 
 C: State: fulfilled, value: undefined
 D: State: rejected, value: undefined
 =========================================================
@@ -148,6 +148,6 @@ let p3 = p.then(function(data) {
 console.log(p2 === p3);
 
 
-// A: True 
-B: False 
+A: True 
+// B: False 
 */

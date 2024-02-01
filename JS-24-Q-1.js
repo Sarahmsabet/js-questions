@@ -12,3 +12,6 @@
  */
 
 //!Answer:
+const createPerson = (name, age, profession) => {
+  return `Hi, my name is ${name}. I'm ${age} years old and work as a ${profession}.`;
+};

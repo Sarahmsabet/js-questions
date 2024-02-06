@@ -5,3 +5,14 @@
 */
 
 // ! Answer
+const tryAsync = async () => {
+  try {
+    const url = await fetch("https://jsonplaceholder.typicode.com/users");
+    const dataIs = await url.json();
+    return dataIs;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+console.log(tryAsync());

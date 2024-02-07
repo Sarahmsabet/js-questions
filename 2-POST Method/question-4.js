@@ -20,7 +20,7 @@ const users = [
 
 /** WRITE YOUR CODE BELOW DOWN */
 const user = async () => {
-  ////////// fetch
+  //   ////////// fetch
   users.forEach(async (element) => {
     const user = await fetch(
       "https://65c102d0dc74300bce8d28bb.mockapi.io/users",
@@ -53,5 +53,16 @@ const firstNameInput = document.querySelector("#fName");
 const lastNameInput = document.querySelector("#lName");
 const phoneNumberInput = document.querySelector("#pNumber");
 const formEle = document.querySelector("form");
-
+const buttonEle = document.querySelector("button");
+buttonEle.addEventListener("click", async (event) => {
+  event.preventDefault();
+  const firstName = firstNameInput.value;
+  const lastName = lastNameInput.value;
+  const phoneNumber = phoneNumberInput.value;
+  await fetch("https://65c102d0dc74300bce8d28bb.mockapi.io/users", {
+    method: "POST",
+    body: JSON.stringify({ firstName, lastName, phoneNumber }),
+    headers: { "content-type": "application/json" },
+  });
+});
 //*To be continue...

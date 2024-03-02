@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #12372a;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+}
+.main-div {
+  background-color: #436850;
+}
+button {
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border: none;
+  transition: 2s;
+}
+button i {
+  color: #fbfada;
+  font-size: 2rem;
+}
+
+button:hover {
+  transform: scale(1.5);
+}
